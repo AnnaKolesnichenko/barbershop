@@ -1,0 +1,506 @@
+body {
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul a,
+div a {
+    text-decoration: none;
+}
+
+.container {
+    width: 480px;
+    padding-left: 31px;
+    padding-right: 31px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    min-width: 480px;
+}
+
+footer {
+    min-width: 480px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+/*---Mobile---*/
+
+/*.container header {
+    position: relative;
+}*/
+
+header {
+    width: 100%;
+    position: absolute;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.main-logo {
+    width: 69px;
+    height: 55px;
+    padding-top: 40px;
+    background-color: transparent;
+    margin-right: 317px;
+}
+
+.nav,
+.contacts {
+    display: none;
+}
+
+.mobile-menu {
+    width: 40px;
+    height: 40px;
+    fill: white;
+}
+
+.mobile-open_btn {
+    position: absolute;
+    top: 50px;
+    right: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/*Hero*/
+
+.hero {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 209px;
+    padding-top: 208px;   
+    background-image: url("./images/mobile_images/Slider_3@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.hero-content .advert {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+ .underline {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    width: 60px;
+    height: 1px;
+    background-color: rgba(157, 164, 189, .6);
+}
+
+.hero-advert {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgba(157, 164, 189, .6);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: .1em;
+}
+
+.hero-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: white;
+    font-family: "Raleway";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: .05em;
+}
+
+.hero-description {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #9DA4BD;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: .02em;
+}
+
+/*About*/
+
+.about-section {
+    padding-top: 84px;
+    padding-bottom: 84px;
+    background-color: white;
+}
+.about-photo {
+    display: none;
+}
+
+.about-start {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.about-start .about-logo {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 11px;
+    font-weight: 60;
+    line-height: 1.4;
+    color: #303030;
+}
+
+.about-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #303030;
+    font-family: 'Raleway';
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: .05em;
+}
+
+.about-pre {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #555555;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: .02em;
+}
+
+.about-main {
+    margin-top: 0;
+    margin-bottom: 40px;
+    color: #555555;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: .02em;
+}
+
+.booking {
+    width: 160px;
+    height: 40px;
+    color: #303030;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: .09em;
+    border-radius: 25px;
+    border: 1px solid #FF6C00;
+    background-color: white;
+}
+
+/*Services and prices*/
+.services {
+    padding-top: 84px;
+    padding-bottom: 84px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to bottom, rgba(7, 7, 8, 0.2),rgba(6, 6, 6, 0.2)),
+    url("./images/mobile_images/Slider_2@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.services-about {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.services-logo {
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, .6);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.services-title {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-family: "Raleway";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: .05em;
+    color: white;
+}
+
+.services-list {
+    width: 418px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: linear-gradient(#171A24, rgba(23, 26, 36, .2));
+}
+
+.services-item_type {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.services-item_type p {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #9DA4BD;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: .02em;
+}
+
+.services-item_type .underline {
+    display: flex;
+    align-self:last baseline;
+}
+
+.services-booking {
+    display: block;
+    margin-top: 44px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 160px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: .09em;
+    border-radius: 25px;
+    border: 1px solid #FF6C00;
+    color: white;
+    background-color: transparent;
+}
+
+/*Statistics*/
+.statistics {
+    padding-top: 84px;
+    padding-bottom: 84px;
+}
+
+.statistics-about {
+    margin-top: 0;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.statistics-logo {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #303030;
+    }
+
+.statistics-title {
+    font-family: "Raleway";
+    color: #303030;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: .04em;
+    }
+
+.statistics-description {
+    margin-top: 0;
+    margin-bottom: 44px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.66;
+    letter-spacing: .02em;
+    color: #555555;
+}
+
+.calculate {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calculate-item {
+    width: 193px;
+    height: 133px;
+    margin-bottom: 30px;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #F7F7F7;
+}
+
+.calculate-item:nth-child(2n+1) {
+    margin-right: 30px;
+}
+
+.calculate-item:nth-child(2) {
+    margin-top: 35px;
+}
+
+.calculate-item:nth-child(3) {
+    margin-top: -30px;
+}
+
+.calculate-item:last-child {
+    margin-bottom: 0;
+}
+
+.calc-number {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: .05em;
+    color: #303030;
+}
+
+.calc-number .sup {
+    align-self: first baseline;
+    margin-bottom: 6px;
+    color: #FF6C00;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 34px;
+}
+
+.calc-descr {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.36;
+    color: #303030;
+}
+
+
+/*Barbers*/
+.barbers {
+    padding-top: 84px;
+    padding-bottom: 84px;
+    background-color: #F7F7F7;
+}
+
+.barbers-about {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.barbers-logo {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #303030;
+}
+
+.barbers-title {
+    margin-bottom: 44px;
+    font-family: 'Raleway';
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: .05em;
+    color: #303030;
+}
+
+.barbers-images_item {
+    margin-bottom: 44px;
+}
+
+.barbers-images_descr {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.barbers-images_descr .name {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: .02em;
+    color: #303030;
+}
+
+.barbers-images_descr .position {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.35;
+    letter-spacing: .02em;
+    color: #FF6C00;
+}
+
+.media {
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.media-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.media-item:last-child {
+    margin-right: 0;
+}
+
+.media-svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
