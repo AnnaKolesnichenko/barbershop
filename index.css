@@ -22,13 +22,20 @@ div a {
     margin-right: auto;
 }
 
-/*section {
+.hero,
+.about-section,
+.services,
+.statistics,
+.barbers,
+.samples,
+.book-part,
+.address-form {
     min-width: 418px;
 }
 
 footer {
     min-width: 418px;
-}*/
+}
 
 .visually-hidden {
     position: absolute;
