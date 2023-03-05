@@ -69,10 +69,34 @@
             <h1 class="visually-hidden">About</h1>
             <div class="container">
                 <div class="about-part">
-                    <div class="about-photo">
-                        <img src="./images/tablet_images/imgshave@2x.jpg" alt="shaving neck" width="330">
-                        <img src="./images/tablet_images/imghead@2x.jpg" alt="shaving head" width="330">
-                    </div>
+                    <ul class="about-photo list">
+                        <li class="about-thumb">
+                            <picture class="img">
+                                <source srcset="./images/desktop_images/side_pic.jpg 1x,
+                                        ./images/desktop_images/side_pic@2x.jpg 2x"
+                                        media="(min-width: 1200px)"/>
+                                <source srcset="./images/tablet_images/imgshave.jpg 1x,
+                                        ./images/tablet_images/imgshave@2x.jpg 2x"
+                                            media="(min-width: 780px)"/>    
+                                <img src="./images/tablet_images/imgshave.jpg"
+                                            alt="guy shaved"
+                                            width="360"/>                       
+                            </picture>
+                        </li>
+                        <li>
+                            <picture>
+                                <source srcset="./images/desktop_images/side_pic2.jpg 1x,
+                                        ./images/desktop_images/side_pic2@2x.jpg 2x"
+                                        media="(min-width: 1200px)"/>
+                                <source srcset="./images/tablet_images/imghead.jpg 1x,
+                                        ./images/tablet_images/imghead@2x.jpg 2x"
+                                        media="(min-width: 780px)"/>
+                                <img src="./images/tablet_images/imghead.jpg"
+                                        alt="head being shaved"
+                                        width="360"/>
+                            </picture>
+                        </li>
+                    </ul>
                     <div class="about">
                         <div class="about-start">
                             <svg class="underline"><use href="./images/symbol-defs.svg#icon-Rectangle-5"></use></svg>
@@ -188,110 +212,151 @@
         <section class="barbers">
             <h1 class="visually-hidden">Our barbers</h1>
             <div class="container">
-                <div class="barbers-about">
-                    <svg class="underline">
-                        <use href="./images/symbol-defs.svg#icon-Rectangle-5"></use>
-                    </svg>
-                    <p class="barbers-logo">For true enjoyers of the atmosphere</p>
-                </div>
-                <h2 class="barbers-title">Our barbers</h2>
-                <div class="barbers-images">
-                    <ul class="barbers-list list">
-                        <li class="barbers-images_item">
-                            <img src="./images/mobile_images/john.jpg" alt="john smith" width="418">
-                            <div class="barbers-images_descr">
-                                <p class="name">John Smith</p>
-                                <p class="position">Extreme Barber</p>
-                            </div>
-                            <div>
-                                <ul class="media list">
-                                    <li>
-                                        <a href="instagram.com" class="media-item">
-                                            <svg class="media-svg"><use href="./images/symbol-defs.svg#icon-instagram-2-1"></use></svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="twitter.com" class="media-item">
-                                            <svg class="media-svg"><use href="./images/symbol-defs.svg#icon-twitter-1"></use></svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="facebook.com" class="media-item">
-                                            <svg class="media-svg"><use href="./images/symbol-defs.svg#icon-facebook-1"></use></svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="linkedin.com" class="media-item">
-                                            <svg class="media-svg"><use href="./images/symbol-defs.svg#icon-linkedin-1"></use></svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="barbers-images_item">
-                            <img src="./images/mobile_images/michele.jpg" alt="michele doe" width="418">
-                            <div class="barbers-images_descr">
-                                <p class="name">Michele Doe</p>
-                                <p class="position">Extreme Barber</p>
-                            </div>
-                            <div>
-                                <ul class="media list">
-                                    <li>
-                                        <a href="instagram.com" class="media-item">
-                                            <svg class="media-svg"><use href="./images/symbol-defs.svg#icon-instagram-2-1"></use></svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="twitter.com" class="media-item">
-                                            <svg class="media-svg"><use href="./images/symbol-defs.svg#icon-twitter-1"></use></svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="facebook.com" class="media-item">
-                                            <svg class="media-svg"><use href="./images/symbol-defs.svg#icon-facebook-1"></use></svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="linkedin.com" class="media-item">
-                                            <svg class="media-svg"><use href="./images/symbol-defs.svg#icon-linkedin-1"></use></svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="barbers-images_item">
-                            <img src="./images/mobile_images/alan.jpg" alt="alan black" width="418">
-                            <div class="barbers-images_descr">
-                                <p class="name">Alan Black</p>
-                                <p class="position">Extreme Barber</p>
-                            </div>
-                            <div>
-                                <ul class="media list">
-                                    <li>
-                                        <a href="instagram.com" class="media-item">
-                                            <svg class="media-svg"><use href="./images/symbol-defs.svg#icon-instagram-2-1"></use></svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="twitter.com" class="media-item">
-                                            <svg class="media-svg"><use href="./images/symbol-defs.svg#icon-twitter-1"></use></svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="facebook.com" class="media-item">
-                                            <svg class="media-svg"><use href="./images/symbol-defs.svg#icon-facebook-1"></use></svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="linkedin.com" class="media-item">
-                                            <svg class="media-svg"><use href="./images/symbol-defs.svg#icon-linkedin-1"></use></svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+
+                    <div class="barbers-about">
+                        <svg class="underline">
+                            <use href="./images/symbol-defs.svg#icon-Rectangle-5"></use>
+                        </svg>
+                        <p class="barbers-logo">For true enjoyers of the atmosphere</p>
+                    </div>
+                    <h2 class="barbers-title">Our barbers</h2>
+
+                    <div class="barber-group">
+                        <ul class="barbers-list list">
+                            <li class="barbers-images_item">
+                                <div>
+                                    <picture>
+                                        <source srcset="./images/desktop_images/john_smith.jpg 1x,
+                                                ./images/desktop_images/john_smith@2x.jpg 2x"
+                                                media="(min-width: 1200px)"/>
+                                        <source srcset="./images/tablet_images/john_smith.jpg 1x,
+                                                ./images/tablet_images/john_smith@2x.jpg 2x"
+                                                media="(min-width: 780px)"/>
+                                        <source srcset="./images/mobile_images/john.jpg 1x,
+                                                ./images/mobile_images/john@2x.jpg 2x"   
+                                                media="(min-width: 480px)"/>
+                                        <img src="./images/mobile_images/john_smith.jpg"
+                                                alt="john smith"
+                                                width="418"/>
+                                    </picture>
+                                </div>
+                                
+                                <div class="barbers-images_descr">
+                                    <p class="name">John Smith</p>
+                                    <p class="position">Extreme Barber</p>
+                                </div>
+                                <div>
+                                    <ul class="media list">
+                                        <li>
+                                            <a href="instagram.com" class="media-item">
+                                                <svg class="media-svg"><use href="./images/symbol-defs.svg#icon-instagram-2-1"></use></svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="twitter.com" class="media-item">
+                                                <svg class="media-svg"><use href="./images/symbol-defs.svg#icon-twitter-1"></use></svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="facebook.com" class="media-item">
+                                                <svg class="media-svg"><use href="./images/symbol-defs.svg#icon-facebook-1"></use></svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="linkedin.com" class="media-item">
+                                                <svg class="media-svg"><use href="./images/symbol-defs.svg#icon-linkedin-1"></use></svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="barbers-images_item">
+                                <picture>
+                                    <source srcset="./images/desktop_images/michele_doe.jpg 1x,
+                                            ./images/desktop_images/michele_doe@2x.jpg 2x"
+                                            media="(min-width: 1200px)"/>
+                                    <source srcset="./images/tablet_images/michele_doe.jpg 1x,
+                                            ./images/tablet_images/michele_doe@2x.jpg 2x"
+                                            media="(min-width: 780px)"/>
+                                    <img src="./images/mobile_images/michele.jpg"
+                                            alt="michele doe"
+                                            width="418"/>
+                                </picture>
+
+                                <div class="barbers-images_descr">
+                                    <p class="name">Michele Doe</p>
+                                    <p class="position">Extreme Barber</p>
+                                </div>
+                                <div>
+                                    <ul class="media list">
+                                        <li>
+                                            <a href="instagram.com" class="media-item">
+                                                <svg class="media-svg"><use href="./images/symbol-defs.svg#icon-instagram-2-1"></use></svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="twitter.com" class="media-item">
+                                                <svg class="media-svg"><use href="./images/symbol-defs.svg#icon-twitter-1"></use></svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="facebook.com" class="media-item">
+                                                <svg class="media-svg"><use href="./images/symbol-defs.svg#icon-facebook-1"></use></svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="linkedin.com" class="media-item">
+                                                <svg class="media-svg"><use href="./images/symbol-defs.svg#icon-linkedin-1"></use></svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="barbers-images_item">
+                                <picture>
+                                    <source srcset="./images/desktop_images/alan_black.jpg 1x,
+                                            ./images/desktop_images/alan_black@2x.jpg 2x"
+                                            media="(min-width: 1200px)"/>
+                                    <source srcset="./images/tablet_images/alan_black.jpg 1x,
+                                            ./images/tablet_images/alan_black@2x.jpg 2x"
+                                            media="(min-width: 780px)"/>
+                                    <img src="./images/mobile_images/alan.jpg"
+                                            alt="alan black"
+                                            width="418"/>
+                                </picture>
+                                
+                                <div class="barbers-images_descr">
+                                    <p class="name">Alan Black</p>
+                                    <p class="position">Extreme Barber</p>
+                                </div>
+                                <div>
+                                    <ul class="media list">
+                                        <li>
+                                            <a href="instagram.com" class="media-item">
+                                                <svg class="media-svg"><use href="./images/symbol-defs.svg#icon-instagram-2-1"></use></svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="twitter.com" class="media-item">
+                                                <svg class="media-svg"><use href="./images/symbol-defs.svg#icon-twitter-1"></use></svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="facebook.com" class="media-item">
+                                                <svg class="media-svg"><use href="./images/symbol-defs.svg#icon-facebook-1"></use></svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="linkedin.com" class="media-item">
+                                                <svg class="media-svg"><use href="./images/symbol-defs.svg#icon-linkedin-1"></use></svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
             </div>
         </section>
 
@@ -307,16 +372,60 @@
                 <div>
                     <ul class="samples-list list">
                         <li class="samples-list_item">
-                            <img src="./images/mobile_images/pic1.jpg" alt="man with razor" width="418">
+                            <picture>
+                                <source srcset="./images/desktop_images/razor_man.jpg 1x,
+                                        ./images/desktop_images/razon_man@2x.jpg 2x"
+                                        media="(min-width: 1200px)"/>
+                                <source srcset="./images/tablet_images/razor_man.jpg 1x,
+                                        ./images/tablet_images/razor_man@2x.jpg 2x"
+                                        media="(min-width: 780px)"/>
+                                <img src="./images/mobile_images/pic1.jpg"
+                                        alt="barber with razor"
+                                        width="418"/>
+                            </picture>
+
                         </li>
                         <li class="samples-list_item">
-                            <img src="./images/mobile_images/pic2.jpg" alt="shaving man" width="418">
+                            <picture>
+                                <source srcset="./images/desktop_images/shaving_guy.jpg 1x,
+                                        ./images/desktop_images/shaving_guy@2x.jpg 2x"
+                                        media="(min-width: 1200px)"/>
+                                <source srcset="./images/tablet_images/shaving_neck.jpg 1x,
+                                        ./images/tablet_images/shaving_neck@2x.jpg 2x"
+                                        media="(min-width: 780px)"/>
+                                <img src="./images/mobile_images/pic2.jpg"
+                                        alt="man shaving in chair"
+                                        width="418"/>
+                            </picture>
+
                         </li>
                         <li class="samples-list_item">
-                            <img src="./images/mobile_images/pic3.jpg" alt="barber with towel" width="418">
+                            <picture>
+                                <source srcset="./images/desktop_images/towel_guy.jpg 1x,
+                                        ./images/desktop_images/towel_guy@2x.jpg 2x"
+                                        media="(min-width: 1200px)"/>
+                                <source srcset="./images/tablet_images/towel_guy.jpg 1x,
+                                        ./images/tablet_images/towel_guy@2x.jpg 2x"
+                                        media="(min-width: 780px)"/>
+                                <img src="./images/mobile_images/pic3.jpg"
+                                        alt="barber with towel"
+                                        width="418"/>
+                            </picture>
+                            
                         </li>
                         <li class="samples-list_item">
-                            <img src="./images/mobile_images/pic4.jpg" alt="barber with tattoos" width="418">
+                            <picture>
+                                <source srcset="./images/desktop_images/tattoo_man.jpg 1x,
+                                        ./images/desktop_images/tattoo_man@2x.jpg 2x"
+                                        media="(min-width: 1200px)"/>
+                                <source srcset="./images/tablet_images/tattoo_shave.jpg 1x,
+                                        ./images/tablet_images/tattoo_shave@2x.jpg 2x"
+                                        media="(min-width: 780px)"/>
+                                <img src="./images/mobile_images/pic4.jpg"
+                                        alt="barber with tattoos"
+                                        width="418"/>
+                            </picture>
+                            
                         </li>
                     </ul>
                 </div>
@@ -332,11 +441,11 @@
                             <label class="book-label" for="name"></label>
                             <input class="book-input" type="text" id="name" name="name" placeholder="NAME*">
                         </div>
-                        <div>
+                        <div class="book-form_field">
                             <label class="book-label" for="phone"></label>
                             <input class="book-input" type="tel" name="phone" id="phone" placeholder="PHONE*">
                         </div>
-                        <div>
+                        <div class="book-form_field">
                             <label for="comment" class="book-label"></label>
                             <textarea class="book-message" name="comment" id="comment" cols="" rows="" placeholder="message*"></textarea>
                         </div>
@@ -349,8 +458,8 @@
         <section class="address-form">
             <div class="container">
                     <h2 class="contact-title">Contacts</h2>
-                    <address>
-                        <ul class="list">
+                    <address class="address-block">
+                        <ul class="contact-info list">
                             <li class="address-item">
                                 <svg class="address-pin"><use href="./images/symbol-defs.svg#icon-map-pin"></use></svg>
                                 <a href="https://goo.gl/maps/RCwuZBjAiYpfHFCj9" 
@@ -379,7 +488,8 @@
   
         <footer class="footer">
             <div class="container">
-                <div>
+                <div class="footer-content">
+                    <p class="footer-items_copyright">&copy;Copyright 2020</p>
                     <ul class="footer-items list">
                         <li class="footer-items_media">
                             <a href="">Instagram</a>
@@ -388,7 +498,7 @@
                             <a href="">Youtube</a>
                         </li>
                     </ul>
-                    <p class="footer-items_copyright">&copy;Copyright 2020</p>
+
                 </div>
             </div>
         </footer>
