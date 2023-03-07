@@ -387,19 +387,28 @@ header {
 }
 
 .calculate-part {
+    display: flex;
     margin-right: auto;
+    justify-content: center;
+    gap: 30px;
 }
 
-.calculate {
+.calculate-first {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.calculate-second {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 35px;
 }
 
 .calculate-item {
     width: 193px;
     height: 133px;
-    margin-bottom: 30px;
     padding-left: 36px;
     padding-right: 36px;
     padding-top: 20px;
@@ -407,7 +416,7 @@ header {
     background-color: #F7F7F7;
 }
 
-.calculate-item:nth-child(2n+1) {
+/*.calculate-item:nth-child(2n+1) {
     margin-right: 30px;
 }
 
@@ -421,7 +430,7 @@ header {
 
 .calculate-item:last-child {
     margin-bottom: 0;
-}
+}*/
 
 .calc-number {
     position: relative;
@@ -466,6 +475,22 @@ header {
     margin-top: 0;
     margin-bottom: 20px;
     align-items: center;
+}
+
+.barber-group {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+}
+
+.barbers-about {
+    display: flex;
+    justify-content: left;
+    margin-left: 120px;
+}
+
+.barbers-title {
+    margin-left: 120px;
 }
 
 .barbers-logo {
@@ -599,11 +624,12 @@ header {
 
 /*Footer*/
 
-.book-part {
+.contact-booking {
     padding-top: 84px;
-    padding-bottom: -84px;
+    padding-bottom: 84px;
     background-color: #191C26;
 }
+
 
 .book-title {
     text-align: center;
@@ -669,7 +695,6 @@ header {
 .book-button {
     display: block;
     margin-top: 44px;
-    margin-bottom: 84px;
     margin-right: auto;
     margin-left: auto;
     border: 1px solid #FF6C00;
@@ -697,7 +722,9 @@ header {
 .address-form {
     padding-top: 84px;
     padding-bottom: 84px;
+ 
     background-image: url("./images/mobile_images/contacts-img.png");
+    background-color: #191C26;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -794,6 +821,11 @@ header {
     background-color: white;
 }
 
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
 .footer-items {
     display: flex;
     justify-content: flex-end;
@@ -829,6 +861,9 @@ header {
 }
 
 .footer-items_copyright {
+    align-self:last baseline;
+    margin-top: 0;
+    margin-bottom: 0;
     font-style: normal;
     font-weight: 600;
     font-size: 11px;
@@ -1112,6 +1147,10 @@ header {
     .statistics-description {
         width: 500px;
     }
+
+    .calculate-part {
+        justify-content: flex-end;
+    }
       
     .calculate {
         display: flex;
@@ -1126,13 +1165,13 @@ header {
         padding-bottom: 100px;       
     }
 
-    .barber-group {
+    /*.barber-group {
         display: flex;
         flex-direction: column;  
         align-items: center;
-    }
+    }*/
 
-    .barbers-about {
+    /*.barbers-about {
         display: flex;
         justify-content: left;
         margin-left: 120px;
@@ -1140,7 +1179,7 @@ header {
 
     .barbers-title {
         margin-left: 120px;
-    }
+    }*/
    
     .barbers-images_item img {
         width: 450px;
@@ -1186,7 +1225,7 @@ header {
     
     .book-part {
         padding-top: 100px;
-        padding-bottom: -100px;
+        padding-bottom: 100px;
         background-color: #191C26;
     }
 
@@ -1213,9 +1252,7 @@ header {
         
     .book-button {
         margin-left: 0;
-        margin-bottom: 100px;
-    }    
-        
+    }            
     
     .address-form {
         padding-top: 100px;
@@ -1278,11 +1315,447 @@ header {
         padding-left: 215px;
         padding-right: 215px;
     }
+
+
+
+    .header {
+        padding-top: 52px;
+        padding-bottom: 52px;
+        background-color: #b1a9a9;
+    }
+
+    /*.navigation {
+        justify-content: center;
+    }*/
+
+    .navigation {
+        display: flex;      
+        justify-content: none;  
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        margin-right: 45px;
+    }
+
+    .navigation-list {
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav-item {
+        margin-right: 10px;
+    }
+
+    .nav-item a {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.4;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+    }
+
+    .header-booking {
+        width: 161px;
+        height: 40px;
+        margin-bottom: 20px;
+        border: 1px solid #FF6C00;
+        border-radius: 25px;
+        background-color: transparent;
+        color: white;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.3;
+        letter-spacing: .09em;
+    }
+
+    .contacts-item a {
+        display: block;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.3;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    .contacts {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 0;
+        align-items: center;
+        justify-content: center;
+        padding-top: 40px;
+    }
+
+    .header-booking {
+        display: block;
+    }
+    
+    .main-logo {
+        fill: black;  
+        margin-right: 59px;
+    }  
+
+    /*HERO*/
+
+    .hero {
+        /*width: 574px;*/
+        margin-right: auto;
+        margin-left: auto;
+        padding-bottom: 239px;
+        padding-top: 204px;   
+        background-image: none;
+        /*background-image: url("./images/tablet_images/slider1@2x.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;*/
+        background-color: white;
+    }
+    
+    .hero-content {
+        background-image: url("./images/tablet_images/slider1@2x.jpg");
+        padding-bottom: 239px;
+        padding-top: 204px; 
+        padding-left: 39px;
+        padding-right: 39px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    
+    }
+
+    .hero-content .advert {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+     .underline {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        width: 60px;
+        height: 1px;
+        background-color: rgba(157, 164, 189, .6);
+    }
+    
+    .hero-advert {
+        margin-top: 0;
+        margin-bottom: 0;
+        color: rgba(157, 164, 189, .6);
+        font-size: 11px;
+        font-weight: 600;
+        line-height: 1.4;
+        letter-spacing: .1em;
+    }
+    
+    .hero-title {
+        margin-top: 0;
+        margin-bottom: 20px;
+        color: white;
+        font-family: "Raleway";
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 1.16;
+        letter-spacing: .05em;
+    }
+    
+    .hero-description {
+        margin-top: 0;
+        margin-bottom: 0;
+        color: #9DA4BD;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.6;
+        letter-spacing: .02em;
+    }
+    
+    /*---------------------About*/
+    
+    .about-section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        background-color: white;
+    }
+
+    .about {
+        width: 470px;
+    }
+    
+    .about-part {
+        display: flex;
+        gap: 30px;
+    }
+
+    .about-photo {
+        display: flex;
+        gap: 30px;
+    }
+    
+    .about-thumb img{
+        width: 270px;
+    }
+
+    .about-thumb:first-child {
+        margin-bottom: 0;
+    }    
+    
+    .about-title {
+        font-size: 42px;
+        line-height: 1.17;
+    }   
+    
+    .about-main {
+        margin-bottom: 42px;
+    }
+    
+    /*-------------------------------Services and prices*/
+    .services {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        background-image: url("./images/tablet_images/img_services.png");
+    }
+        
+    .services-list {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background: none;
+        padding: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .services .services-list {
+        margin-right: 0;
+    }
+
+    .services-items {
+        width: calc((100% - 30px) / 2);
+        padding-right: 22px;
+        padding-left: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }    
+
+    .services-items:first-child {
+        background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    }
+
+    .services-items:last-child {
+        background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+        margin-right: 0;
+    }
+    
+    .services-item::before {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background: rgba(157, 164, 189, 0.12);
+        flex-grow: 1;
+    }
+    
+    .services-item p:first-child {
+        order: -1;
+    }
+    
+    .services-item {
+        display: flex;
+        align-items: flex-end;
+        gap: 4px;
+        margin-bottom: 20px;
+    }
+
+    .services-item:last-child {
+        margin-bottom: 0;
+    }  
+    
+    .services-item p {
+        flex-shrink: 0; /*stretches element to its full lenght without shrinking*/
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.67;
+    }    
+    
+    
+    /*------------------------------------Statistics*/
+    .statistics {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .change-pos {
+        display: flex;
+        flex-direction: column;
+        flex-direction: row-reverse;
+        gap: 130px;
+    }
+
+    .statistics-text {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .calculate-part {
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-right: 0;
+    }      
+    
+    
+    /*-------------------------------Barbers*/
+    .barbers {
+        padding-top: 120px;
+        padding-bottom: 120px;       
+    }
+
+    .barber-group {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .barbers-list {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .barbers-title {
+        margin-left: 0;
+    }
+   
+    .barbers-images_item img {
+        width: 370px;
+    }
+        
+    .barbers-images_item {
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+  
+    /*-------------------------Samples*/
+    
+    .samples {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+   
+    .samples-list {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 30px;
+    }
+    
+    .samples-list_item {
+        margin-bottom: 0;
+    }
+
+    .samples-list_item img {
+        width: 270px;
+        display: block;
+    }
+    
+    /*-------------------Footer*/
+
+    .contact-part {
+        display: flex;
+    }
+    
+    .book-part {
+        width: 800px;
+        padding-top: 130px;
+        padding-bottom: 183px;
+        padding-right: 30px;   
+    }
+
+    .book-form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .book-form_field {
+        width: 270px;
+    }
+
+    .book-message {
+        width: 570px;
+    }
+
+    .book-form_field:first-child {
+        margin-right: 30px;
+    }
+
+    .book-form_field:last-child {
+        width: 690px;
+    }
+    
+    .book-title {
+        text-align: left;
+    }       
+        
+    
+    .address-form {
+        width: 800px;
+        padding-top: 120px;
+        padding-bottom: 130px;
+        padding-left: -215px;
+    }    
+
+    .address-block {
+        display: flex;
+    }
+    
+    .contact-title {
+        text-align: left;
+    }
+
+    .contact-info {
+        margin-right: 30px;
+    }
+        
+    .address-item .address a{
+        display: block;
+        width: 290px;
+        font-weight: 700;
+        line-height: 1.67;
+    }    
+        
+    .address-item:last-child {
+        margin-bottom: 0;
+    }
+   
+    
+    /*Footer*/
+    .footer {
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+
+    .footer-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .footer-items {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 0;
+    }
+        
+    .footer-items_copyright {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
     
 }
-    
-    
-    
+
+
 
 
 

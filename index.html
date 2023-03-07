@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Open+Sans:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./index.css"/>
-    <link rel="stylecheet" href="./tablet.css"/>
+
 </head>
 <body>
     <header class="header">
@@ -74,7 +74,7 @@
                             <picture class="img">
                                 <source srcset="./images/desktop_images/side_pic.jpg 1x,
                                         ./images/desktop_images/side_pic@2x.jpg 2x"
-                                        media="(min-width: 1200px)"/>
+                                        media="(min-width: 1600px)"/>
                                 <source srcset="./images/tablet_images/imgshave.jpg 1x,
                                         ./images/tablet_images/imgshave@2x.jpg 2x"
                                             media="(min-width: 780px)"/>    
@@ -83,11 +83,11 @@
                                             width="360"/>                       
                             </picture>
                         </li>
-                        <li>
+                        <li class="about-thumb">
                             <picture>
                                 <source srcset="./images/desktop_images/side_pic2.jpg 1x,
                                         ./images/desktop_images/side_pic2@2x.jpg 2x"
-                                        media="(min-width: 1200px)"/>
+                                        media="(min-width: 1600px)"/>
                                 <source srcset="./images/tablet_images/imghead.jpg 1x,
                                         ./images/tablet_images/imghead@2x.jpg 2x"
                                         media="(min-width: 780px)"/>
@@ -126,7 +126,7 @@
                 <h2 class="services-title">Services and prices</h2>
 
             <div class="services-list">
-                <div>
+
                     <ul class="services-items list">
                         <li class="services-item">
                             <p>Men's hairstyle</p>                                
@@ -145,9 +145,8 @@
                                 <p>from 200 uah.</p>
                         </li>
                     </ul>
-                </div>
-                <div>
-                    <ul class="list">
+
+                    <ul class="services-items list">
                         <li class="services-item">
                                 <p>Trainee's haircut</p>                                
                                 <p>from 50 uah.</p>
@@ -165,7 +164,7 @@
                                 <p>from 200 uah.</p>
                         </li>
                     </ul>
-                </div>
+
             </div>
             <button type="button" class="services-booking">ONLINE-BOOKING</button>
             </div>
@@ -174,36 +173,40 @@
         <section class="statistics">
             <h1 class="visually-hidden">Why come to us</h1>
             <div class="container">
-                <div>
-                    <div class="statistics-about">
-                        <svg class="underline">
-                            <use href="./images/symbol-defs.svg#icon-Rectangle-5"></use>
-                        </svg>
-                        <p class="statistics-logo">OLD TRADITIONAL SCHOOL</p>
+                <div class="change-pos">
+                    <div class="statistics-text">
+                        <div class="statistics-about">
+                            <svg class="underline">
+                                <use href="./images/symbol-defs.svg#icon-Rectangle-5"></use>
+                            </svg>
+                            <p class="statistics-logo">OLD TRADITIONAL SCHOOL</p>
+                        </div>
+                        <h2 class="statistics-title">¿Why people come to us?</h2>
+                        <p class="statistics-description">Only good things are said about us. 
+                            But it's better to see and feel 1 time than read 10 times. </p>
                     </div>
-                    <h2 class="statistics-title">¿Why people come to us?</h2>
-                    <p class="statistics-description">Only good things are said about us. 
-                        But it's better to see and feel 1 time than read 10 times. </p>
-                </div>
-                <div class="calculate-part">
-                    <ul class="calculate list">
-                        <li class="calculate-item">
-                            <p class="calc-number">600<sup class="sup">+</sup></p>
-                            <p class="calc-descr">Satisfied customers per day</p>
-                        </li>
-                        <li class="calculate-item">
-                            <p class="calc-number">50<sup class="sup">+</sup></p>
-                            <p class="calc-descr">Awards for excellent service</p>
-                        </li>
-                        <li class="calculate-item">
-                            <p class="calc-number">20<sup class="sup">+</sup></p>
-                            <p class="calc-descr">Kyiv's best barbers</p>
-                        </li>
-                        <li class="calculate-item">
-                            <p class="calc-number">100<sup class="sup">+</sup></p>
-                            <p class="calc-descr">Gifts for regular customers</p>
-                        </li>
-                    </ul>
+                    <div class="calculate-part">
+                        <ul class="calculate-first list">
+                            <li class="calculate-item">
+                                <p class="calc-number">600<sup class="sup">+</sup></p>
+                                <p class="calc-descr">Satisfied customers per day</p>
+                            </li>
+                            <li class="calculate-item">
+                                <p class="calc-number">50<sup class="sup">+</sup></p>
+                                <p class="calc-descr">Awards for excellent service</p>
+                            </li>
+                        </ul>
+                        <ul class="calculate-second list">
+                            <li class="calculate-item">
+                                <p class="calc-number">20<sup class="sup">+</sup></p>
+                                <p class="calc-descr">Kyiv's best barbers</p>
+                            </li>
+                            <li class="calculate-item">
+                                <p class="calc-number">100<sup class="sup">+</sup></p>
+                                <p class="calc-descr">Gifts for regular customers</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             
         </div>
@@ -228,14 +231,14 @@
                                     <picture>
                                         <source srcset="./images/desktop_images/john_smith.jpg 1x,
                                                 ./images/desktop_images/john_smith@2x.jpg 2x"
-                                                media="(min-width: 1200px)"/>
+                                                media="(min-width: 1600px) 370w"/>
                                         <source srcset="./images/tablet_images/john_smith.jpg 1x,
                                                 ./images/tablet_images/john_smith@2x.jpg 2x"
                                                 media="(min-width: 780px)"/>
                                         <source srcset="./images/mobile_images/john.jpg 1x,
                                                 ./images/mobile_images/john@2x.jpg 2x"   
                                                 media="(min-width: 480px)"/>
-                                        <img src="./images/mobile_images/john_smith.jpg"
+                                        <img src="./images/mobile_images/john.jpg"
                                                 alt="john smith"
                                                 width="418"/>
                                     </picture>
@@ -274,7 +277,7 @@
                                 <picture>
                                     <source srcset="./images/desktop_images/michele_doe.jpg 1x,
                                             ./images/desktop_images/michele_doe@2x.jpg 2x"
-                                            media="(min-width: 1200px)"/>
+                                            media="(min-width: 1600px) 370w"/>
                                     <source srcset="./images/tablet_images/michele_doe.jpg 1x,
                                             ./images/tablet_images/michele_doe@2x.jpg 2x"
                                             media="(min-width: 780px)"/>
@@ -316,7 +319,7 @@
                                 <picture>
                                     <source srcset="./images/desktop_images/alan_black.jpg 1x,
                                             ./images/desktop_images/alan_black@2x.jpg 2x"
-                                            media="(min-width: 1200px)"/>
+                                            media="(min-width: 1600px) 370w"/>
                                     <source srcset="./images/tablet_images/alan_black.jpg 1x,
                                             ./images/tablet_images/alan_black@2x.jpg 2x"
                                             media="(min-width: 780px)"/>
@@ -374,8 +377,8 @@
                         <li class="samples-list_item">
                             <picture>
                                 <source srcset="./images/desktop_images/razor_man.jpg 1x,
-                                        ./images/desktop_images/razon_man@2x.jpg 2x"
-                                        media="(min-width: 1200px)"/>
+                                        ./images/desktop_images/razor_man@2x.jpg 2x"
+                                        media="(min-width: 1600px)"/>
                                 <source srcset="./images/tablet_images/razor_man.jpg 1x,
                                         ./images/tablet_images/razor_man@2x.jpg 2x"
                                         media="(min-width: 780px)"/>
@@ -389,7 +392,7 @@
                             <picture>
                                 <source srcset="./images/desktop_images/shaving_guy.jpg 1x,
                                         ./images/desktop_images/shaving_guy@2x.jpg 2x"
-                                        media="(min-width: 1200px)"/>
+                                        media="(min-width: 1600px)"/>
                                 <source srcset="./images/tablet_images/shaving_neck.jpg 1x,
                                         ./images/tablet_images/shaving_neck@2x.jpg 2x"
                                         media="(min-width: 780px)"/>
@@ -403,7 +406,7 @@
                             <picture>
                                 <source srcset="./images/desktop_images/towel_guy.jpg 1x,
                                         ./images/desktop_images/towel_guy@2x.jpg 2x"
-                                        media="(min-width: 1200px)"/>
+                                        media="(min-width: 1600px)"/>
                                 <source srcset="./images/tablet_images/towel_guy.jpg 1x,
                                         ./images/tablet_images/towel_guy@2x.jpg 2x"
                                         media="(min-width: 780px)"/>
@@ -417,7 +420,7 @@
                             <picture>
                                 <source srcset="./images/desktop_images/tattoo_man.jpg 1x,
                                         ./images/desktop_images/tattoo_man@2x.jpg 2x"
-                                        media="(min-width: 1200px)"/>
+                                        media="(min-width: 1600px)"/>
                                 <source srcset="./images/tablet_images/tattoo_shave.jpg 1x,
                                         ./images/tablet_images/tattoo_shave@2x.jpg 2x"
                                         media="(min-width: 780px)"/>
@@ -432,31 +435,30 @@
             </div>
         </section>
 
-        <section class="book-part">
+        <section class="contact-booking">
             <div class="container">
-                <div class="book-form">
-                    <h2 class="book-title">Online-booking</h2>
-                    <form class="book-form">
-                        <div class="book-form_field">
-                            <label class="book-label" for="name"></label>
-                            <input class="book-input" type="text" id="name" name="name" placeholder="NAME*">
-                        </div>
-                        <div class="book-form_field">
-                            <label class="book-label" for="phone"></label>
-                            <input class="book-input" type="tel" name="phone" id="phone" placeholder="PHONE*">
-                        </div>
-                        <div class="book-form_field">
-                            <label for="comment" class="book-label"></label>
-                            <textarea class="book-message" name="comment" id="comment" cols="" rows="" placeholder="message*"></textarea>
-                        </div>
-                    </form>
-                    <button type="submit" class="book-button">send</button>
-                </div>
-            </div>
-        <section>
-
-        <section class="address-form">
-            <div class="container">
+                <section class="book-part">
+                    <div class="book-form">
+                        <h2 class="book-title">Online-booking</h2>
+                        <form class="book-form">
+                            <div class="book-form_field">
+                                <label class="book-label" for="name"></label>
+                                <input class="book-input" type="text" id="name" name="name" placeholder="NAME*">
+                            </div>
+                            <div class="book-form_field">
+                                <label class="book-label" for="phone"></label>
+                                <input class="book-input" type="tel" name="phone" id="phone" placeholder="PHONE*">
+                            </div>
+                            <div class="book-form_field">
+                                <label for="comment" class="book-label"></label>
+                                <textarea class="book-message" name="comment" id="comment" cols="" rows="" placeholder="message*"></textarea>
+                            </div>
+                        </form>
+                        <button type="submit" class="book-button">send</button>
+                    </div>
+                </section>
+            
+                <section class="address-form">
                     <h2 class="contact-title">Contacts</h2>
                     <address class="address-block">
                         <ul class="contact-info list">
@@ -483,8 +485,10 @@
                             <p class="schedule-hours">Every day from 9:00 to 22:00</p>
                         </div>
                     </address>
+                </section>
             </div>
         </section>
+
   
         <footer class="footer">
             <div class="container">
