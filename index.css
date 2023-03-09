@@ -624,12 +624,11 @@ header {
 
 /*Footer*/
 
-.contact-booking {
+.book-part {
     padding-top: 84px;
     padding-bottom: 84px;
     background-color: #191C26;
 }
-
 
 .book-title {
     text-align: center;
@@ -1221,12 +1220,11 @@ header {
     }
     
     
-    /*Footer*/
+    /*-------Footer----------*/
     
     .book-part {
         padding-top: 100px;
         padding-bottom: 100px;
-        background-color: #191C26;
     }
 
     .book-form {
@@ -1661,20 +1659,15 @@ header {
     
     /*-------------------Footer*/
 
-    .contact-part {
-        display: flex;
-    }
-    
     .book-part {
-        width: 800px;
         padding-top: 130px;
         padding-bottom: 183px;
         padding-right: 30px;   
     }
 
-    .book-form {
-        display: flex;
-        flex-wrap: wrap;
+    .book-part {
+        display: block;
+        min-width: 50%;
     }
 
     .book-form_field {
@@ -1699,7 +1692,6 @@ header {
         
     
     .address-form {
-        width: 800px;
         padding-top: 120px;
         padding-bottom: 130px;
         padding-left: -215px;
