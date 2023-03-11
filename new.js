@@ -1,4 +1,4 @@
-const personOne = {
+/*const personOne = {
     name: "Bob",
     age: 21
   };
@@ -58,31 +58,30 @@ const personOne = {
   //7.2
   const totalSpent = 2000;
   let payments = 500;
+  let discPayment;
   let discount = 0;
 
   if(totalSpent >= 100 || totalSpent <=1000) {
-    discount = '2%';
-    console.log(`Processing an order for ${payments} with ${discount}`);
+    discount = 0.02;
   }
   else if (totalSpent <= 5000) {
-    discount = '5%';
-    console.log(`Processing an order for ${payments} with ${discount}`);
+    discount = 0.05;
   }
   else if (totalSpent > 5000) {
-    discount = '10%';
-    console.log(`Processing an order for ${payments} with ${discount}`);
+    discount = 0.1;
   }else {
     console.log('You are not on any discount program, discount is 0');
   }
 
+  console.log(`Processing an order for ${payments} with ${discount * 100}`);
+  discPayment = payments - (payments * discount);
+  console.log(`To pay is ${discPayment}`);
+
 
   //3
-  const stars = 1;
-  let price = prompt('Enter quantity of stars?', );
-
-  if(price === '' || price === NaN) {
-    console.log("There is no such star quantity hotel");
-  }
+ 
+  let stars = +prompt('Enter quantity of stars?', '');
+  console.log(price);
 
   switch(stars) {
     case 1:
@@ -103,3 +102,75 @@ const personOne = {
   }
 
   
+const employees = 7;
+const minSal = 500;
+const maxSal = 5000;
+let totalSalary = 0;
+
+for(let i = 1; i <= employees; i++) {
+  let salary = Math.random() * (maxSal - minSal) + minSal;
+  totalSalary += salary;
+  console.log(`Salary of worker number ${i} - ${salary}`);
+}
+
+console.log(totalSalary);
+
+const minim = 6;
+const maxim = 13;
+let total = 0;
+
+for(let i = minim; i < maxim; i++) {
+  if(i%2===0) {
+    console.log(`Even ${i}`);
+    total = total + i;
+    
+  }
+  console.log(total);
+}
+
+const fruits = ['🍎1', '🍇2', '🍑3', '🍌4', '🍋5'];
+for(const fruit of fruits) {
+  let num = fruits.indexOf(fruit) + 1;
+  console.log(num  + ':' + fruit);
+}*/
+
+
+/*const question = prompt("What is the official name of JavaScript?", " ");
+
+if(question == 'ECMAscript') {
+  console.log(alert("Correct!!"));
+}else {
+  console.log(alert("You do not know? ECMAScript"));
+}*/
+
+
+const hours = 14;
+const minutes = 26;
+let timestring;
+
+if(minutes > 0) {
+  console.log(`${hours} hours, ${minutes} minutes`);
+} else {
+  console.log(`${hours} hours`);
+}
+
+
+const userInput = prompt("Enter your number", '');
+
+if (userInput > 0) {
+  console.log("This is a positive number");
+}else if (userInput < 0) {
+  console.log("This is a negative number");
+} else {
+  console.log("This is zero");
+}
+
+//Напиши скрипт, який порівнює числа у змінних a та b. Якщо обидва значення більше 100, то виведи в консоль максимальне з них. В протилежному випадку у консолі повинна бути сума значення b та числа 512.
+const a = 120;
+const b = 180;
+
+if(a > 100 && b > 100) {
+  console.log(Math.max(a, b));
+} else {
+  console.log(b + 512);
+}
