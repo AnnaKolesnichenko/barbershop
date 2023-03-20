@@ -250,7 +250,7 @@ if (login === 'Admin') {
   console.log("I do not recognize you");
 }*/
 
-const genres = ['Jazz', 'Blues'];
+/*const genres = ['Jazz', 'Blues'];
 genres.push('rock-n-roll');
 console.log(genres);
 console.log(genres[0]);
@@ -266,14 +266,14 @@ console.log(nums);
 const square = nums[0] * nums[1];
 console.log(square);
 
-const namesA = 'Jacob,William,Solomon,Artemis';
+/*const namesA = 'Jacob,William,Solomon,Artemis';
 const phonesA = '89001234567,89001112233,890055566377,890055566300';
 
 const namesArr = namesA.split(" ");
-const phonesArr = phonesA.split(" ");
+const phonesArr = phonesA.split(" ");*/
 
 
-const string = "Welcome to the future";
+/*const string = "Welcome to the future";
 const newStrgin = string.split(" ");
 console.log(newStrgin);
 const anyStr = newStrgin.slice(1, newStrgin.length-1);
@@ -281,23 +281,23 @@ console.log(anyStr.join(" "));
 
 
 
-/*Example 6 - Массивы и строки
-Напиши скрипт который «разворачивает» строку (обратный порядок букв) и выводит ее в консоль.*/
+Example 6 - Массивы и строки
+Напиши скрипт который «разворачивает» строку (обратный порядок букв) и выводит ее в консоль.
 const stringFly = 'Welcome to the future';
 console.log(stringFly.split("").reverse().join(""));
 
 
-/*Example 7 - Сортировка массива с циклом
-Напиши скрипт сортировки массива строк в алфавитном порядке по первой букве элемента.*/
+Example 7 - Сортировка массива с циклом
+Напиши скрипт сортировки массива строк в алфавитном порядке по первой букве элемента.
 const langs = ['python', 'javascript', 'c++', 'haskel', 'php', 'ruby'];
 const langsSort = langs.sort();
 console.log(langsSort);
 
 
-/*Example 8 - Поиск элемента
+Example 8 - Поиск элемента
 Напиши скрипт поиска самого маленького числа в массиве. 
 Код должен работать для любого массива чисел. 
-Используй цикл для решения задачи.*/
+Используй цикл для решения задачи.
 const numbers = [2, 17, 94, 1, 23, 37];
 let min;
 for(let i = 0; i <= numbers.length; i++){
@@ -354,5 +354,427 @@ for(let i = 0; i <= numbers.length; i++){
     }
   }
   console.log(findSmallest(numberArr));
- 
 
+
+ //functions
+ function calcBMI(weight, height) {
+  weight = Number(weight.replace(',', '.'));
+  height = Number(height.replace(',', '.'));
+
+  return (weight/ height**2).toFixed();
+ }
+
+ const bmi = calcBMI('88,3', '1.75');
+ console.log(bmi);
+
+
+ //find minimal of numbers
+ function min(a, b) {
+  let number = a;
+  if(a > b) {
+    number = b;
+
+  }
+  return number;
+ }
+
+ console.log(min(2,4));
+ console.log(min(3, -1));
+ console.log(min(1,1));
+
+
+ //get square
+ function getRectArea(dimensions) {
+  const dimens = dimensions.split(" ");
+  
+  const square = dimens[0] * dimens[1];
+  return square;
+
+ }
+ console.log(getRectArea('8 11'));
+
+
+ //log of numbers---------------------------------------------------
+function printContactsInfo(names, phones) {
+  const namesArr = names.split(' ');
+  const phonesArr = phones.split(' ');
+
+  for(let i = 0; i <= namesArr.length; i++) {
+    for(let j = 0; j <= phonesArr.length; j++) {
+      const newItem = namesArr[i] + phonesArr[j];
+      console.log(newItem);
+      return newItem;
+
+    }
+  }
+
+}
+console.log(printContactsInfo('Jacob,William,Solomon,Artemis', 
+'89001234567,89001112233,890055566377,890055566300'));
+//---------------------------------------------------------------------
+
+//max element
+function findLargestNumber(numbers) {
+  let largest = numbers[0];
+  for(const num of numbers) {
+    if(num > largest) {
+      largest = num;
+    }
+  }
+  return largest;
+}
+
+console.log(findLargestNumber([2, 17, 94, 1, 23, 37])); // 94
+console.log(findLargestNumber([49, 4, 7, 83, 12])); // 83
+
+//average meaning
+function calAverage(...args) {
+  let sum = 0;
+  let average = 0;
+    for(const arg of args) {
+      sum += arg;
+      average = sum / args.length;
+    }
+
+  return average;
+}
+console.log(calAverage(1, 2, 3, 4)); // 2.5
+console.log(calAverage(14, 8, 2)); // 8
+console.log(calAverage(27, 43, 2, 8, 36)); // 23.2
+
+function calculate() {
+  const array = Array.from(arguments);
+
+  let sum = 0;
+  let average = 0;
+  for(const i of array) {
+    sum += i;
+    average = sum / array.length;
+  }
+  return average;
+}
+console.log(calculate(1, 2, 3, 4)); // 2.5
+console.log(calculate(14, 8, 2)); // 8
+console.log(calculate(27, 43, 2, 8, 36)); // 23.2
+
+//formating time
+/*Напиши функцію formatTime(minutes) яка переведе значення minutes (кількість хвилин) у рядок у форматі годин та хвилин HH:MM.
+
+const hours = Math.floor(totalMinutes / 60);
+const minutes = totalMinutes % 60;
+console.log(hours);
+console.log(minutes);
+
+const doubleDigitHours = String(hours).padStart(2, 0);
+const doubleDigitMinutes = String(minutes).padStart(2, 0);
+console.log(`${doubleDigitHours}:${doubleDigitMinutes}`);
+
+function formatTime(minutes) {}
+
+console.log(formatTime(70)); // "01:10"
+console.log(formatTime(450)); // "07:30"
+console.log(formatTime(1441)); // "24:01"
+
+
+//courses colleciton
+const courses = ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL'];
+function addCourse(name) {
+  if(courses.includes(name)) {
+    console.log("You already have a course like this");
+  } else{ 
+    return courses.push(name);
+  }
+}
+
+
+function removeCourse(name) {
+  const index = courses.indexOf(name);
+
+  if(index === -1) {
+    console.log("There is no course with this name");
+  }
+
+  for(let i = 0; i <= courses.length; i++) {
+    if(courses[index] == name) {
+      const newCourse = courses.splice(index, 1);
+      return newCourse;
+    }
+  }
+}
+
+
+function updateCourse(oldName, newName) {
+  const index = courses.indexOf(oldName);
+  for(let i = 0; i <= courses.length; i++) {
+    if(courses[index]) {
+      newList = courses.splice(index, 1, newName);
+    }
+  }
+  return newList;
+
+}
+
+
+addCourse('Express');
+console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL', 'Express']
+addCourse('CSS'); // 'Ви вже маєте такий курс'
+
+removeCourse('React');
+console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'Express']
+removeCourse('Vue'); // 'Курс із таким ім'ям не знайдено'
+
+updateCourse('Express', 'NestJS');
+console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']*/
+
+/*const apples = +prompt('how many apples are there? ', ''); 
+const grapes = +prompt('How many grapes are there? ',''); 
+
+if(Number(apples) > Number(grapes)) {
+  console.log(apples-grapes);
+}else if(Number(grapes) > Number(apples)){
+  console.log(grapes-apples);
+}
+
+
+  function getGrade (s1, s2, s3) {
+    // Code here
+    let num = (s1 + s2 + s3)/3;
+    if (num >= 90 && num <= 100) {
+      return 'A';
+    }else if (num >= 80 && num < 90) {
+      return 'B';
+    } else if(num >= 70 && num < 80) {
+      return 'C';
+    }else if(num >= 60 && num < 70) {
+      return 'D';
+    } else {
+      return 'F';
+    }
+  }
+
+
+console.log(getGrade(95,90,93));*/
+
+function getGrades(s1, s2, s3){
+  let num = (s1 + s2 + s3)/3;
+  switch(true) {
+    case (num >= 90 && num <= 100):
+      console.log('a');
+      return 'A';
+      break;
+    case (num >= 80 && num < 90):
+      console.log('b');
+      return 'B';
+      break;
+    case (num >= 70 && num < 80):
+      console.log('c');
+      return 'C';
+      break;
+    case (num >= 60 && num < 70):
+      return 'D';
+      break;
+    deafult:
+    return 'F';
+  }
+}
+getGrades(82,85,87);
+getGrades(100, 85, 96);
+getGrades(70, 70, 70);
+
+function boolToWord(bool){
+  //...
+  
+  return bool ? 'yes' : 'no';
+
+
+  }
+  console.log(boolToWord(55));
+
+
+  function boolToWord(x){
+    //...
+    if(!x) {
+      return "Yes";
+    }else {
+      return "No";
+    }
+  }
+  console.log(boolToWord(''));
+
+
+  function digitize(n) {
+    //code here
+    let num = String(n);
+    console.log(typeof(num));
+    console.log(num);
+    let arr = num.split("").reverse();
+    return arr;
+  
+  }
+  console.log(digitize(35231));
+
+  function findNeedle(haystack) {
+    // your code here
+    for(let i = 0; i <= haystack.length; i ++){
+      if(haystack[i] == 'needle') {
+        console.log(`found the ${haystack[i]} at posiiton ${i}`);
+        break;
+      }
+    }
+  }
+  findNeedle(["hay", "junk", "hay", "hay", "moreJunk","apple", "needle", "randomJunk"]);
+
+  function repeatStr (n, s) {
+    let str = '';
+    for (let i = 1; i <=n; i++){
+      str += s;
+    }
+    return str;
+  }
+  console.log(repeatStr(3, "a"));
+
+  const reverseSeq = n => {
+    let arr = [];
+    for(let i = 1; i <= n; i ++) {
+      arr.push(i);
+    }
+    
+    return arr.reverse();
+  };
+
+  console.log(reverseSeq(5));
+
+
+  class SmallestIntegerFinder {
+    findSmallestInt(args) {
+      const smallest = Math.min(...args);
+      console.log(smallest);
+      return smallest;
+      
+    }
+  }
+
+  function DNAtoRNA(dna) {
+    // create a function which returns an RNA sequence from the given DNA sequence
+  
+      
+      return dna.replaceAll("T", "U");     
+     }
+
+
+  console.log(DNAtoRNA("TTTT"));
+  
+  function betterThanAverage(classPoints, yourPoints) {
+    // Your code here
+    classPoints.push(yourPoints);
+    let total = 0;
+    for(const i of classPoints) {
+      total += i;
+    }
+
+    total = total/classPoints.length;
+    return total < yourPoints;
+
+     
+    //if((total / classPoints.length)>= yourPoints) {
+      //return false;
+    //} else {
+      //return true;
+    //}
+  }
+
+  console.log(betterThanAverage([2,3], 5));
+  console.log(betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 75));
+  console.log(betterThanAverage([12, 23, 34, 45, 56, 67, 78, 89, 90], 9));
+  console.log(betterThanAverage([41, 75, 72, 56, 80, 82, 81, 33], 50));
+  console.log(betterThanAverage([29, 55, 74, 60, 11, 90, 67, 28], 21));
+
+
+  function maps(x) {
+    return x.map (x => x**2);
+  }
+  console.log(maps([1, 2, 3]));
+
+///
+  function squareSum(numbers){
+    let total = 0;
+
+    numbers.map(x => {
+      total += x**2});
+    return total;
+
+  }
+
+  console.log(squareSum([1,2]));
+
+////
+function lovefunc(flower1, flower2){
+  // moment of truth
+  if(flower1 % 2 == 0 && flower2 % 2 == 0){
+    return false;
+  }
+  return true;
+}
+
+console.log(lovefunc(2,2));
+
+///
+const min = function(list) {
+  let minim = list[0];
+  for(let i = 0; i <= list.length; i++) {
+    if (list[i] < minim) {
+      minim = list[i];
+    }
+  }
+  return minim;
+}
+
+console.log(min([-52, 56, 30, 29, -54, 0, -110]));
+
+const max = function(list) {
+  let maxim = list[0];
+  for(let i = 0; i <= list.length; i++) {
+    if (list[i] > maxim) {
+      maxim = list[i];
+    }
+  }
+  return maxim;
+}
+
+console.log(max([4,6,2,1,9,63,-134,566]));
+
+
+///
+function invert(array) {
+  const arrNew = array.map(x => x * -1);
+  return arrNew;
+}
+console.log(invert([1,2,3,4,5]));
+console.log(invert([1, -2, 3, -4, 5]));
+
+
+///
+function feast(beast, dish) {
+  //your function here
+  if (beast.at(0) === dish.at(0) && beast.at(-1) === dish.at(-1)) {
+    return true;
+  }
+  return false;
+}
+
+console.log(feast("great blue heron", "garlic naan"));
+console.log(feast("brown bear", "bear claw"));
+
+
+///
+function areYouPlayingBanjo(name) {
+  if(name.at(0).toLowerCase() === 'r' && name.at(0).toUpperCase() === 'R') {
+    return name + " plays banjo";
+  }
+  return name + " does not play banjo";
+}
+
+console.log(areYouPlayingBanjo("Adam"));
+console.log(areYouPlayingBanjo("ringo"));
+
+  
