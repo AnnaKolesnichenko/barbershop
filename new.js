@@ -971,12 +971,14 @@ console.log(formatMess("Curabitur ligula sapien", 23));
 ///
 const atTheOldToad = {
   // Change code below this line
-  potions: this.atTheOldToad.potions;
+  potions: this.atTheOldToad.potions,
 
 
 
   // Change code above this line
 };
+
+console.log("hello");
 
 
 
