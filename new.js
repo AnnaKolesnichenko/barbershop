@@ -777,4 +777,206 @@ function areYouPlayingBanjo(name) {
 console.log(areYouPlayingBanjo("Adam"));
 console.log(areYouPlayingBanjo("ringo"));
 
+///
+function longest(s1, s2) {
+  let str = s1 + s2; 
+  str.split("");
+  let result = [];
+  for(const i of str) {
+    if(!result.includes(i)) {
+      result.push(i);
+    }
+  }
+  return result.sort().join('');
+}
   
+console.log(longest("aretheyhere", "yestheyarehere"));
+console.log(longest("loopingisfunbutdangerous", "lessdangerousthancoding"));
+
+///
+function oddOrEven(array) {
+  //enter code here
+ let total = 0;
+ for(const i of array) {
+   total += i;
+ }
+ if(total % 2 == 0) {
+   return "even";
+ }else {
+   return "odd";
+ }
+}
+
+console.log(oddOrEven([0, 1]));
+console.log(oddOrEven([1,2,3,4]));
+
+///
+const stringToNumber = function(str){
+  // put your code here
+  
+  return Number(str);
+}
+console.log(stringToNumber("1234"));
+console.log(stringToNumber("605"));
+
+///
+function highAndLow(numbers){
+  // ...
+  let result = '';
+  const arr = numbers.split(" ");
+
+  const min = Math.min(...arr);
+  const max = Math.max(...arr);
+
+  result =  max + " " + min;
+
+
+  return result;
+}
+
+console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"));
+
+///
+function countProps(object) {
+  // Change code below this line
+  let propCount = 0;
+
+  const keys = Object.keys(object);
+  console.log(keys);
+
+  for (const key of keys) {
+    
+      propCount += 1;
+    
+  }
+
+  return propCount;
+  // Change code above this line
+}
+
+console.log(countProps({ name: 'Mango', age: 2 }));
+console.log(countProps({ mail: 'poly@mail.com', isOnline: true, score: 500 }));
+
+
+///
+function countTotalSalary(salaries) {
+  let totalSalary = 0;
+  // Change code below this line
+  const values = Object.values(salaries);
+  for(val of values) {
+    totalSalary += val;
+  }
+
+  // Change code above this line
+  return totalSalary;
+}
+
+console.log(countTotalSalary({}));
+console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 }));
+
+///
+const products = [
+  { name: "Radar", price: 1300, quantity: 4 },
+  { name: "Scanner", price: 2700, quantity: 3 },
+  { name: "Droid", price: 400, quantity: 7 },
+  { name: "Grip", price: 1200, quantity: 9 },
+];
+
+function getProductPrice(productName) {
+  // Change code below this line
+
+  for(const item of products) {
+    if (item.name === productName) {
+      return item.price;
+    }
+  }
+  return null;
+}
+
+  console.log(getProductPrice("Grip"));
+
+
+///
+const product = [
+  { name: "Radar", price: 1300, quantity: 4 },
+  { name: "Scanner", price: 2700, quantity: 3 },
+  { name: "Droid", price: 400, quantity: 7 },
+  { name: "Grip", price: 1200, quantity: 9 },
+];
+
+function getAllPropValues(propName) {
+  // Change code below this line
+  let arrValues = [];
+  for(const i of product) {
+    
+    if (i[propName] !== undefined) { 
+      arrValues.push(i[propName]) 
+    } 
+  } 
+  return arrValues; 
+}
+
+console.log(getAllPropValues("category"));
+
+///
+function calculateTotalPrice(productName) {
+  // Пиши код ниже этой строки
+  for(const item of product) {
+    if (item.name === productName) {
+      return item.price * item.quantity;
+    }
+    
+  }
+  return 0;
+  // Пиши код выше этой строки
+}
+console.log(calculateTotalPrice('Radar'));
+console.log(calculateTotalPrice('Grip'));
+console.log(calculateTotalPrice('Blast'));
+
+///
+const highTemperatures = {
+  yesterday: 28,
+  today: 26,
+  tomorrow: 33,
+};
+// Change code below this line
+
+function add(...args) {
+  let result = 0;
+  for(const i of args) {
+    result += i;
+  }
+  return result;
+  // Change code above this line
+  
+}
+console.log(add(15, 27));
+console.log(add(32, 6, 13, 19, 8));
+
+///
+function formatMess(message, maxLength) {
+  let result;
+  if(message.length <= maxLength) {
+    result = message;
+  } else {
+    result =  message.slice(0, maxLength) + ('...');
+  }
+  return result;
+}
+
+console.log(formatMess("Curabitur ligula sapien", 16));
+console.log(formatMess("Curabitur ligula sapien", 23));
+
+///
+const atTheOldToad = {
+  // Change code below this line
+  potions: this.atTheOldToad.potions;
+
+
+
+  // Change code above this line
+};
+
+
+
